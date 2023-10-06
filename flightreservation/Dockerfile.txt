@@ -1,0 +1,5 @@
+FROM openjdk:17
+VOLUME /tmp
+EXPOSE 10555
+ADD target/flightreservation-0.0.1-SNAPSHOT.jar flightreservation-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar","flightreservation-0.0.1-SNAPSHOT.jar"]
